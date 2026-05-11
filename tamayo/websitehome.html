@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME - ISU</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .isuprofile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-buttons button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-buttons button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        .nav-buttons button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            color: #1b5e20;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero-content {
+            background: white;
+            padding: 50px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(46, 125, 50, 0.1);
+            border-left: 5px solid #2e7d32;
+            text-align: center;
+        }
+
+        .hero-content p {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .quick-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .link-btn {
+            display: inline-block;
+            padding: 14px 32px;
+            background-color: #2e7d32;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+        }
+
+        .link-btn:hover {
+            background-color: #1b5e20;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(46, 125, 50, 0.4);
+        }
+
+        .video-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .video-section h2 {
+            color: #1b5e20;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(46, 125, 50, 0.15);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .header-left {
+                flex: auto;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .nav-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .page-title {
+                font-size: 2em;
+            }
+
+            .hero-content {
+                padding: 30px;
+            }
+
+            .quick-links {
+                flex-direction: column;
+            }
+
+            .link-btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="isuprofile.png.jpg" alt="isu_logo" class="isuprofile">    
+            <h1>ISABELA STATE UNIVERSITY</h1>
+        </div>
+        <div class="nav-buttons">
+            <button><a href="websitehome.html">Home</a></button>
+            <button><a href="about.html">About</a></button>
+            <button><a href="programs.html">Programs</a></button>
+            <button><a href="facilities.html">Facilities</a></button>
+            <button><a href="contact.html">Contact</a></button>
+            <button><a href="vision.html">Vision</a></button>
+            <button><a href="mission.html">Mission</a></button>
+            <button><a href="https://youtu.be/Pt7uj_5ozus?si=deCSLmCzT4NH6OpY" target="_blank">Hymn</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="page-title">Welcome to ISU Cauayan Campus</h1>
+        <div class="hero-content">
+            <p>Isabela State University is committed to providing excellent and relevant education towards sustainable development and nation-building. Explore our vision and mission to understand our commitment to academic excellence and societal transformation.</p>
+            <div class="quick-links">
+                <a href="about.html" class="link-btn">Learn About Us</a>
+                <a href="programs.html" class="link-btn">View Programs</a>
+                <a href="contact.html" class="link-btn">Contact Us</a>
+                <a href="https://youtu.be/Pt7uj_5ozus?si=deCSLmCzT4NH6OpY" class="link-btn" target="_blank">Watch Hymn</a>
+            </div>
+        </div>
+        <div class="video-section">
+            <h2>ISU Hymn Video</h2>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/Pt7uj_5ozus" title="ISU Hymn Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - ISU Cauayan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8f5e9 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            flex-wrap: wrap;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .isuprofile {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .nav-buttons button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .nav-buttons button:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            border-color: white;
+        }
+
+        .nav-buttons button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            color: #1b5e20;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(46, 125, 50, 0.1);
+            border-left: 5px solid #2e7d32;
+            line-height: 1.8;
+        }
+
+        .content h2 {
+            color: #1b5e20;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content h3 {
+            color: #2e7d32;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        .content p {
+            color: #333;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+        }
+
+        .content ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        .content li {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+
+            .header-left {
+                flex: auto;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .nav-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .page-title {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <img src="isuprofile.png.jpg" alt="isu-logo" class="isuprofile">    
+            <h1>ISABELA STATE UNIVERSITY</h1>
+        </div>
+        
+        <div class="nav-buttons">
+            <button><a href="websitehome.html">Home</a></button>
+            <button><a href="about.html">About</a></button>
+            <button><a href="programs.html">Programs</a></button>
+            <button><a href="facilities.html">Facilities</a></button>
+            <button><a href="contact.html">Contact</a></button>
+            <button><a href="vision.html">Vision</a></button>
+            <button><a href="mission.html">Mission</a></button>
+            <button><a href="https://youtu.be/Pt7uj_5ozus?si=deCSLmCzT4NH6OpY" target="_blank">Hymn</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="page-title">About ISU Cauayan Campus</h1>
+        <div class="content">
+            <h2>Welcome to Isabela State University Cauayan Campus</h2>
+            <p>Isabela State University (ISU) is a premier educational institution in the Philippines committed to providing quality education for sustainable development. The Cauayan Campus is one of the strategic campuses of ISU, dedicated to serving the educational needs of the Isabela community and beyond.</p>
+            
+            <h3>Campus Overview</h3>
+            <p>Located in Cauayan, Isabela, our campus is equipped with modern facilities and staffed by dedicated educators committed to academic excellence. The campus serves thousands of students across various undergraduate and graduate programs.</p>
+            
+            <h3>History</h3>
+            <p>Established as part of ISU's expansion initiative, the Cauayan Campus has grown to become a center of academic excellence, offering diverse programs in agriculture, engineering, education, business, and information technology.</p>
+            
+            <h3>Core Values</h3>
+            <ul>
+                <li><strong>Excellence:</strong> Commitment to high academic standards</li>
+                <li><strong>Innovation:</strong> Integration of modern teaching methodologies</li>
+                <li><strong>Sustainability:</strong> Focus on environmental and social responsibility</li>
+                <li><strong>Inclusivity:</strong> Creating opportunities for all students</li>
+                <li><strong>Community Service:</strong> Contributing to societal development</li>
+            </ul>
+            
+            <h3>Academic Leadership</h3>
+            <p>The campus is administered by qualified administrators and academic officers dedicated to providing supportive learning environments and fostering student success.</p>
+        </div>
+    </div>
+</body>
+</html>
